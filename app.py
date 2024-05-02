@@ -5,10 +5,10 @@ from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 
 # Database connection parameters
-server = 'bachtn-db.database.windows.net'  # e.g., 'localhost' or '192.168.1.5'
-database = 'bachtnsqlserver01'
+server = 'sqlserverprj1.database.windows.net'  
+database = 'SQLdatabase'
 username = 'bachtn'
-password = '!6Den10kytu@'
+password = 'azureuser'
 driver = '{ODBC Driver 17 for SQL Server}'
 
 # Connection string
@@ -26,7 +26,7 @@ def get_users():
 
 ### PUBLIC PROPERTIES ###
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mssql+pyodbc://bachtn:!6Den10kytu@bachtn.database.windows.net/bachtn?driver=ODBC+Driver+17+for+SQL+Server'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mssql+pyodbc://azureuser:Kkhanhss#154@sqlserverprj1.database.windows.net/SQLdatabase?driver=ODBC+Driver+18+for+SQL+Server'
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
