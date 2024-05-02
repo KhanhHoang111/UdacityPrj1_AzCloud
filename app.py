@@ -7,8 +7,8 @@ app = Flask(__name__)
 # Database connection parameters
 server = 'sqlserverprj1.database.windows.net'  
 database = 'SQLdatabase'
-username = 'bachtn'
-password = 'azureuser'
+username = 'azureuser'
+password = 'Kkhanhss#1'
 driver = '{ODBC Driver 17 for SQL Server}'
 
 # Connection string
