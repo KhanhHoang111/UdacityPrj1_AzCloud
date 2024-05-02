@@ -66,4 +66,4 @@ jobs:
         with:
           app-name: 'webprj1'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_81CA1F2E6FC4480584EF4FC325208AEE }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_78A960205E1D47259887A6B131AE98DF }}
