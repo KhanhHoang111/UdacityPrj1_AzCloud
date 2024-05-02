@@ -14,6 +14,11 @@ app.config.from_object(Config)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mssql+pyodbc://azureuser:Kkhanhss#154@sqlserverprj1.database.windows.net/SQLdatabase?driver=ODBC+Driver+17+for+SQL+Server'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
+app.logger.setLevel(logging.WARNING)
+streamHandler = logging.StreamHandler()
+streamHandler.setLevel(logging.WARNING)
+app.logger.addHandler(streamHandler)
+
 Session(app)
 db = SQLAlchemy(app)
 login = LoginManager(app)
